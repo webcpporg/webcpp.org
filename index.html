@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+  Copyright (c) 2026 WebCpp.org
+
+  Distributed under the Boost Software License, Version 1.0. (See
+  accompanying file LICENSE_1_0.txt or copy at
+  https://www.boost.org/LICENSE_1_0.txt)
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>webcpp</title>
+<meta name="description" content="C++ for the web: browser, server and native. The first release is on its way.">
+<style>
+  :root {
+    --ground: #fbfaff; --ink: #1d1a2b; --muted: #5d5873; --accent: #5b3fd9; --rule: #e4e0f5;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground: #13111c; --ink: #ece9f7; --muted: #a39dbd; --accent: #9d8cff; --rule: #2b2740;
+            color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px 16px;
+         background: var(--ground); color: var(--ink);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 34rem; }
+  h1 { margin: 0 0 4px; font-size: 2.6rem; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); }
+  .tagline { margin: 0 0 28px; color: var(--muted); font-size: 1.15rem; }
+  p { margin: 0 0 16px; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; padding-top: 24px;
+        border-top: 1px solid var(--rule); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  nav a { padding: 8px 14px; border: 1px solid var(--rule); border-radius: 8px; text-decoration: none; }
+  nav a:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>web<span>cpp</span></h1>
+  <p class="tagline">C++ for the web: browser, server and native.</p>
+  <p>Header-only C++20 libraries that run as WebAssembly in the browser, as WASI components on
+     a server, and natively, with the same code and the same tests.</p>
+  <p>The first release is on its way. Until then, the documentation of what is being built is
+     the preview of the main branch.</p>
+  <nav>
+    <a href="https://webcpporg.github.io/">The preview of main</a>
+    <a href="https://github.com/webcpporg/webcpp">Source on GitHub</a>
+  </nav>
+</main>
+</body>
+</html>
